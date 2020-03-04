@@ -14,14 +14,20 @@
 
 TARGET_KERNEL_CONFIG := aosp_yukon_flamingo_defconfig
 
+# Inherit lineage common stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/flamingo/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Resolution
+TARGET_SCREEN_HEIGHT := 854
+TARGET_SCREEN_WIDTH := 480
+
 # Product attributes
-PRODUCT_NAME := aosp_d2203
+PRODUCT_NAME := lineage_flamingo
 PRODUCT_DEVICE := flamingo
-PRODUCT_MODEL := Xperia E3 (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
