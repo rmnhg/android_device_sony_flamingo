@@ -46,10 +46,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.flamingo
 
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.flamingo
-
 # NFC config
 PRODUCT_PACKAGES += \
     nfc_nci.flamingo
