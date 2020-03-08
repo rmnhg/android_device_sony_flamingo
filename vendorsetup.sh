@@ -15,3 +15,4 @@
 #
 
 add_lunch_combo lineage_flamingo-userdebug
+add_lunch_combo lineage_flamingo-eng
